@@ -4,6 +4,7 @@ var Person = function(first, last, middle) {
     this.last = last;
 };
 
+// TODO: Fix this class
 Person.prototype = {
 
     whoAreYou : function() {
@@ -14,8 +15,10 @@ Person.prototype = {
 
 var a = NaN;
 
+// TODO: Also fix this class on the branch
 if (a === NaN) {  // Noncompliant; always false
   console.log("a is not a number");  // this is dead code
+  console.log("this is a dead code branch");  // added a console log to my test branch
 }
 if (a !== NaN) { // Noncompliant; always true
   console.log("a is not NaN"); // this statement is not necessarily true
