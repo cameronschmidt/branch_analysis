@@ -5,6 +5,7 @@ public class HelloWorld {
   public void coveredByUnitTest() {
     System.out.println("coveredByUnitTest1");
     System.out.println("coveredByUnitTest2");
+    System.out.println("Covered in branch");
   }
 
   public void coveredByIntegrationTest() {
@@ -15,6 +16,7 @@ public class HelloWorld {
 
   public void notCovered() {
     System.out.println("notCovered");
+    System.out.println("Not covered in branch");
   }
 
 }
